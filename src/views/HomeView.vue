@@ -1,9 +1,5 @@
-<script setup>
-import TheWelcome from "../components/Field.vue";
-</script>
+<script setup></script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <main></main>
 </template>
