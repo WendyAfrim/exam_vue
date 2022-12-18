@@ -10,13 +10,20 @@ const props = defineProps({
     type: String,
     required: true
   }, 
+
+  modelValue: {
+    type: String
+  }
 })
+
+
+
 
 </script>
 
 <template>
 
-  <component :is="as">
+  <component :is="as" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
     <slot></slot>
   </component>
 
