@@ -35,8 +35,8 @@ function setSubmitting(val) {
 function handleSubmit(e) {
   e.preventDefault();
   setSubmitting(true);
-  if (props.validate) formErrors = props.validate({ ...formValues });
-  emit("submit", { ...formValues }, { setSubmitting });
+  if (props.validate) formErrors = props.validate(formValues);
+  emit("submit", formValues, { setSubmitting });
 }
 </script>
 

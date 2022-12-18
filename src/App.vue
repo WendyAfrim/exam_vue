@@ -79,7 +79,7 @@ function onSubmit(values, { setSubmitting }) {
     <FieldVue name="name" id="name" /><br />
 
     <label for="email">Email</label>
-    <FieldVue name="email" id="email" as="input" /> <br />
+    <FieldVue name="email" id="email" /> <br />
 
     <label for="password">Password</label>
     <FieldVue name="password" id="password" /> <br />
